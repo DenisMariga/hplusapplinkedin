@@ -1,4 +1,4 @@
-package com.ynz.hplusapp;
+package com.denis.hplusapp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
