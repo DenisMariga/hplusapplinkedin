@@ -42,14 +42,13 @@
 	 <div class="container tagline">
 	   <em>Register User</em><br/>
     		 <form>
-    			<label>Username</label> <input path="userName" type="text"/> <br/>
-    			<label>Password</label> <input path="password" type="password"/><br/>
-    			<label>First Name</label> <input path="firstName" type="text" /><br/>
-    			<label>Last Name</label> <form:input path="lastName" type="text" /><br/>
+    			<label>Username</label> <input  type="text"/> <br/>
+    			<label>Password</label> <input type="password"/><br/>
+    			<label>First Name</label> <input  type="text" /><br/>
+    			<label>Last Name</label> <input type="text" /><br/>
     			<label>What do you want to do? </label> 
 				<radiobutton path="activity" id="activity" value="sport"/>Play a Sport?
 				<radiobutton path="activity" id="activity" value="Gym"/>Hit the Gym?
-				<errors path="activity" cssClass="error"/><br/>
     			<label>Date of birth</label>
     			<input path="dateOfBirth" type="date"/>
     			<br/>

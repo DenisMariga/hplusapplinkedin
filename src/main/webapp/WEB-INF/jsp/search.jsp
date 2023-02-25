@@ -42,25 +42,21 @@
 		</div>
 	</section>
 	<!-- guarantee -->
-
+	<c:if test="${!empty(products)}">
     		<section id="products" class="section">
 
-
+			<c:forEach var="product" items="${products}">
     		<div class="productContainer">
-                           
             				<div class="productContainerItem">
-            					<img id="pic1" src="">
+            					<img id="pic1" src="${product.image_path}" alt="">
             					<input type="text" name="product"
-            						value=""><br />
+            						value="${product.name}"><br />
 
             				</div>
-
-                        
-
-            		</div>
-           
+            </div>
+	        </c:forEach>
             </section>
-
+	</c:if>
 
 	<section id="history" class="section">
 		<div class="container">
@@ -212,6 +208,7 @@
 				<!-- person-card -->
 			</div>
 			<!-- container -->
+        </div>
 	</section>
 	<!-- people -->
 
