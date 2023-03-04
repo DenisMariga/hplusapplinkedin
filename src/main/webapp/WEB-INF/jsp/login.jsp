@@ -30,6 +30,7 @@
   </div>container tagline -->
 	</header>
 	<!-- #home -->
+	<span class="success">${data-saved}</span>
    	<section id="login" class="section">
 		<div class="container tagline">
 			<em>LOGIN USER</em>
