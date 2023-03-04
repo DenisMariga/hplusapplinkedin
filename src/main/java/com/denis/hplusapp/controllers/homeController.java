@@ -31,9 +31,10 @@ public class homeController {
     public Users getDefaultUser(){
         return new Users();
     }
-    @ModelAttribute("genderItems")
-    public List<String> getGenderItems(){
-        return Arrays.asList(new String[]{"Male","Female","Other"});
+   @ModelAttribute("genderItems")
+   public List<String>genderItems(){
+        return Arrays.asList("Male","Female","Others");
     }
 }
+
 
