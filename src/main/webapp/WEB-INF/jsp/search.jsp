@@ -43,7 +43,8 @@
 	</section>
 	<!-- guarantee -->
 	<c:if test="${!empty(products)}">
-    		<section id="products" class="section">
+
+	<section id="products" class="section">
 
 			<c:forEach var="product" items="${products}">
     		<div class="productContainer">

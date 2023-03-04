@@ -1,8 +1,12 @@
 package com.denis.hplusapp.controllers;
 
+import com.denis.hplusapp.Models.Users;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import java.util.Arrays;
+import java.util.List;
 
 @Controller
 public class homeController {
@@ -22,6 +26,14 @@ public class homeController {
     @GetMapping("/goToRegister")
     public String goToRegister(){
         return "register";
+    }
+    @ModelAttribute("newuser")
+    public Users getDefaultUser(){
+        return new Users();
+    }
+    @ModelAttribute("genderItems")
+    public List<String> getGenderItems(){
+        return Arrays.asList(new String[]{"Male","Female","Other"});
     }
 }
 
