@@ -30,15 +30,15 @@
   </div>container tagline -->
 	</header>
 	<!-- #home -->
-<span class="success">${data-saved}</span>
    	<section id="login" class="section">
 		<div class="container tagline">
 			<em>LOGIN USER</em>
-			<form:form action="/login" method="post" modelAttribute="login" >
-				<label>Username</label> <br />
-			    <label>Password</label><br />
-			     <input type="submit" value="Login">
-			</form:form>
+			<form action="#" method="post" >
+				<label>Username</label>	<input type="text" name="username"> <br />
+			    <label>Password</label> <input type="password" name="username"> <br />
+
+				<input type="submit" value="Login">
+			</form>
 			 <a class="card-title" href="/goToRegister">Register new user? Click here</a>
 		</div>
 	</section>
